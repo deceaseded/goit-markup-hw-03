@@ -10,90 +10,92 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
-
-
-
-    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 </head>
 
 <body class="port-page">
-    <header>
+    <header class="top-line">
         <div class="container">
-            <nav>
-                <a class="port-logo-link" href="/index.html">Web<span class="port-logo-header">Studio</span></a>
-                <ul class="port-site-nav">
-                    <li><a href="">Студія</a></li>
-                    <li><a class="port-link current" href="/portfolio.html">Портфоліо</a></li>
-                    <li><a href="">Контакти</a></li>
+            <div class="port-head">
+                <nav class="port-nav">
+                    <a class="port-logo-link" href="/index.html">Web<span class="port-logo-header">Studio</span></a>
+                    <ul class="port-site-nav">
+                        <li class="item"><a href="">Студія</a></li>
+                        <li class="item"><a class="port-link current" href="/portfolio.html">Портфоліо</a></li>
+                        <li class="item"><a href="">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="port-auth-nav">
+                    <li class="mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="port-auth-nav">
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+            </div>
+            
         </div>
 
     </header>
     <main>
         <section class="container">
             <!-- <h1>Type of work</h1> -->
-            <ul class="port-list">
-                <li><button type="button" class="port-items">Усі</button></li>
-                <li><button type="button" class="port-items">Веб-сайти</button></li>
-                <li><button type="button" class="port-items">Додатки</button></li>
-                <li><button type="button" class="port-items">Дизайн</button></li>
-                <li><button type="button" class="port-items">Маркетинг</button></li>
-            </ul>
-
-
-            <ul class="port-list">
-                <li class="port-item">
-                    <img src="./images/img5.jpg" alt="project1" width="370">
-                    <h2 class="port-title">Технокряк</h2>
-                    <p class="port-text">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/img6.jpg" alt="project2" width="370">
-                    <h2 class="port-title">Постер New Orlean vs Golden Star</h2>
-                    <p class="port-text">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/img7.jpg" alt="project3" width="370">
-                    <h2 class="port-title">Ресторан Seafood</h2>
-                    <p class="port-text">Додаток</p>
-                </li>
-                <li>
-                    <img src="./images/img8.jpg" alt="project4" width="370">
-                    <h2 class="port-title">Проєкт Prime</h2>
-                    <p class="port-text">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/img9.jpg" alt="project5" width="370">
-                    <h2 class="port-title">Проєкт Boxes</h2>
-                    <p class="port-text">Додаток</p>
-                </li>
-                <li>
-                    <img src="./images/img10.jpg" alt="project6" width="370">
-                    <h2 class="port-title">Inspiration has no Borders</h2>
-                    <p class="port-text">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/img11.jpg" alt="project7" width="370">
-                    <h2 class="port-title">Видання Limited Edition</h2>
-                    <p class="port-text">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/img12.jpg" alt="project8" width="370">
-                    <h2 class="port-title">Проєкт LAB</h2>
-                    <p class="port-text">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/img13.jpg" alt="project9" width="370">
-                    <h2 class="port-title">Growing Business</h2>
-                    <p class="port-text">Додаток</p>
-                </li>
-            </ul>
+            <div class="port-buttons">
+                <ul class="port-list">
+                    <li class="item"><button type="button" class="port-items">Усі</button></li>
+                    <li class="item"><button type="button" class="port-items">Веб-сайти</button></li>
+                    <li class="item"><button type="button" class="port-items">Додатки</button></li>
+                    <li class="item"><button type="button" class="port-items">Дизайн</button></li>
+                    <li class="item"><button type="button" class="port-items">Маркетинг</button></li>
+                </ul>
+            </div>
+            <div class="port-picture">
+                <ul class="port-list">
+                    <li class="port-item">
+                        <img src="./images/img5.jpg" alt="project1" width="370">
+                        <h2 class="port-title">Технокряк</h2>
+                        <p class="port-text">Веб-сайт</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img6.jpg" alt="project2" width="370">
+                        <h2 class="port-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="port-text">Дизайн</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img7.jpg" alt="project3" width="370">
+                        <h2 class="port-title">Ресторан Seafood</h2>
+                        <p class="port-text">Додаток</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img8.jpg" alt="project4" width="370">
+                        <h2 class="port-title">Проєкт Prime</h2>
+                        <p class="port-text">Маркетинг</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img9.jpg" alt="project5" width="370">
+                        <h2 class="port-title">Проєкт Boxes</h2>
+                        <p class="port-text">Додаток</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img10.jpg" alt="project6" width="370">
+                        <h2 class="port-title">Inspiration has no Borders</h2>
+                        <p class="port-text">Веб-сайт</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img11.jpg" alt="project7" width="370">
+                        <h2 class="port-title">Видання Limited Edition</h2>
+                        <p class="port-text">Дизайн</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img12.jpg" alt="project8" width="370">
+                        <h2 class="port-title">Проєкт LAB</h2>
+                        <p class="port-text">Маркетинг</p>
+                    </li>
+                    <li class="port-item">
+                        <img src="./images/img13.jpg" alt="project9" width="370">
+                        <h2 class="port-title">Growing Business</h2>
+                        <p class="port-text">Додаток</p>
+                    </li>
+                </ul>
+            </div>
+           
 
         </section>
 

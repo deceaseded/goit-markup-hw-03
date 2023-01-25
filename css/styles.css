@@ -9,6 +9,9 @@
     --auth-footer-color: rgba(255, 255, 255, 0.6);
     --accent-text-color: #FFFFFF;
     --bcg-button-color: #F5F4FA;
+    --head-line-color:#ECECEC; 
+    --port-item-line-color:#EEEEEE; 
+
 }
 
 .page {
@@ -21,17 +24,25 @@
 
 /* header */
 .header {
-    background-color: #FFFFFF;
+    background-color: var(--primary-bcg-color);
+}
+.main-nav{
+    display: flex;
+    align-items: center;
 }
 
 /* container-head */
+.head{
+    display: flex;
+    align-items: center;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 2px solid blueviolet;
+    
 }
 
 .logo-link {
@@ -54,8 +65,12 @@
 
 
 .site-nav {
-
     list-style: none;
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
 }
 
 
@@ -80,6 +95,12 @@
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
+    display: flex;
+    margin-left: auto;
+    
+}
+.auth-nav .tel{
+    margin-left: 50px;
 }
 
 .auth-nav a {
@@ -148,8 +169,13 @@
 .list-advantages {
     list-style: none;
     margin-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
 }
-
+.list-advantages .item{
+    width: 270px;
+}
 .advantages-title {
     color: var(--title-text-color);
     font-size: 14px;
@@ -172,10 +198,13 @@
     margin-top: 0;
     margin-bottom: 94px;
     padding-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .our-team{
     background-color: #F5F4FA;
     padding-top: 94px;
+    padding-bottom: 87px;
 }
 
 .titles {
@@ -190,6 +219,10 @@
 
 .list-person {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    
 }
 
 .names {
@@ -234,9 +267,10 @@
     margin-bottom: 9px;
     display: inline-block;
 }
-.mail{
+.mail-footer{
     display: inline-block;
     margin-bottom: 9px;
+   
 }
 
 .footer-nav {
@@ -265,12 +299,26 @@
 
 
 /* Port */
+.top-line{
+    border-bottom: var(--head-line-color) solid 1px;
+    margin-bottom: 0;
+    margin-bottom: 94px;
+}
 .port-page {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     background: var(--primary-bcg-color);
     color: var(--primary-text-color);
+}
+.port-head{
+    display: flex;
+    align-items: center;
+    
+}
+.port-nav{
+    display: flex;
+    align-items: center;
 }
 
 /* Header */
@@ -294,6 +342,11 @@
 
 .port-site-nav {
     list-style: none;
+    display: flex;
+    margin-left: 93px;
+}
+.port-site-nav .item:not(:last-child){
+    margin-right: 50px;
 }
 
 .port-site-nav .port-link.current {
@@ -320,6 +373,12 @@
 .port-auth-nav {
     list-style: none;
     margin-bottom: 0;
+    display: flex;
+    margin-top: 0  ;
+    margin-left: auto;
+}
+.port-auth-nav .mail{
+    margin-right: 50px;
 }
 
 .port-auth-nav a {
@@ -341,15 +400,33 @@
 
 /* Main */
 /* container body */
+.port-buttons .port-list{
+    display: flex;
+}
 .port-list {
     list-style: none;
    margin-bottom: 34px;
-   margin-top: 94px;
+   margin-top: 0;
+   justify-content: center;
+   padding-left: 0;
+}
+.port-list .item:not(:last-child){
+    margin-right: 8px;
 }
 .port-list .port-item{
     padding-bottom: 20px;
+    margin-right: 30px;
+    border: var(--port-item-line-color) solid 1px;
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
 }
-
+.port-list .port-item:nth-child(3n){
+    margin-right: 0;
+}
+.port-list .port-item:nth-child(n + 7){
+    margin-bottom: 0;
+}
 .port-list .port-items {
     color: var(--title-text-color);
     background-color: var(--bcg-button-color);
@@ -384,6 +461,8 @@
     color: var(--title-text-color);
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .port-list .port-text {
@@ -391,6 +470,12 @@
     line-height: 1.87;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.port-picture .port-list{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* footer */
