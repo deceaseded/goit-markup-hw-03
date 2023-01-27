@@ -24,6 +24,15 @@ ul{
     color: var(--primary-text-color);
     background-color: var(--primary-bcg-color);
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* header */
 .header {
@@ -248,15 +257,18 @@ ul{
     padding-left: 0;
 
 }
-
+.item-names{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: var(--primary-bcg-color);
+}
 .names {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    
 }
 
 .profession {
@@ -264,7 +276,9 @@ ul{
     line-height: 1.18;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    background-color: var(--primary-bcg-color);
 }
 
 /* Footer */
@@ -327,7 +341,7 @@ ul{
 .top-line {
     border-bottom: var(--head-line-color) solid 1px;
     margin-bottom: 0;
-    margin-bottom: 94px;
+   
 }
 
 .port-page {
@@ -434,14 +448,27 @@ ul{
 
 /* Main */
 /* container body */
-.port-buttons .port-list {
+.visually-hidden{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+.port-buttons  {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .port-list {
     list-style: none;
-    margin-bottom: 34px;
+    
     margin-top: 0;
     justify-content: center;
     padding-left: 0;
@@ -454,10 +481,16 @@ ul{
 .port-list .port-item {
     padding-bottom: 20px;
     margin-right: 30px;
-    border: var(--port-item-line-color) solid 1px;
+    
     width: 370px;
-    height: 404px;
+   
     margin-bottom: 30px;
+}
+.discription{
+    padding: 20px 24px;
+    border-bottom: var(--port-item-line-color) solid 1px;
+    border-right: var(--port-item-line-color) solid 1px;
+    border-left: var(--port-item-line-color) solid 1px;
 }
 
 .port-list .port-item:nth-child(3n) {
@@ -494,16 +527,15 @@ ul{
     background-color: var(--accent-color);
 }
 
+
 .port-list .port-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-top: 0;
 }
 
 .port-list .port-text {
@@ -511,11 +543,10 @@ ul{
     line-height: 1.87;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 24px;
-    margin-right: 24px;
+   
 }
 
-.port-picture .port-list {
+.port-picture  {
     display: flex;
     flex-wrap: wrap;
 }
@@ -533,7 +564,6 @@ ul{
 
 .port-foot {
     background-color: #2F303A;
-    margin-top: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
